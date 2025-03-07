@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冥想App - 社区</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="flex space-x-6">
+        <!-- 社区动态页面 -->
+        <div class="w-80 h-[600px] bg-white rounded-[40px] p-6 shadow-xl overflow-hidden relative">
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 absolute inset-0 opacity-50"></div>
+            
+            <div class="relative h-full flex flex-col">
+                <!-- 顶部标题 -->
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-xl font-bold text-gray-800">社区</h1>
+                    <img src="https://unpkg.com/lucide-static@latest/icons/edit.svg" class="w-6 h-6 text-gray-600">
+                </div>
+
+                <!-- 话题标签 -->
+                <div class="flex space-x-3 mb-6 overflow-x-auto">
+                    <div class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm whitespace-nowrap">全部</div>
+                    <div class="bg-white/70 backdrop-blur-xl px-4 py-2 rounded-xl text-sm text-gray-600 whitespace-nowrap border border-white/20">经验分享</div>
+                    <div class="bg-white/70 backdrop-blur-xl px-4 py-2 rounded-xl text-sm text-gray-600 whitespace-nowrap border border-white/20">心得感悟</div>
+                    <div class="bg-white/70 backdrop-blur-xl px-4 py-2 rounded-xl text-sm text-gray-600 whitespace-nowrap border border-white/20">问题解答</div>
+                </div>
+
+                <!-- 动态列表 -->
+                <div class="space-y-4 flex-1 overflow-auto">
+                    <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20">
+                        <div class="flex items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format" 
+                                 class="w-10 h-10 rounded-full object-cover mr-3">
+                            <div>
+                                <h3 class="font-medium text-gray-800">Sarah Wilson</h3>
+                                <p class="text-xs text-gray-500">2小时前</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">
+                            今天完成了连续30天的晨间冥想，感觉整个人都不一样了！分享一下我的心得...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <div class="flex items-center">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/heart.svg" class="w-4 h-4 mr-1">
+                                <span>128</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/message-circle.svg" class="w-4 h-4 mr-1">
+                                <span>36</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/share.svg" class="w-4 h-4 mr-1">
+                                <span>分享</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20">
+                        <div class="flex items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format" 
+                                 class="w-10 h-10 rounded-full object-cover mr-3">
+                            <div>
+                                <h3 class="font-medium text-gray-800">Tom Chen</h3>
+                                <p class="text-xs text-gray-500">5小时前</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">
+                            求助：初学者应该如何选择合适的冥想时长？现在感觉15分钟有点难坚持...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <div class="flex items-center">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/heart.svg" class="w-4 h-4 mr-1">
+                                <span>56</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/message-circle.svg" class="w-4 h-4 mr-1">
+                                <span>42</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/share.svg" class="w-4 h-4 mr-1">
+                                <span>分享</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 底部导航 -->
+                <div class="pt-4">
+                    <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-4 flex justify-around border border-white/20">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/home.svg" class="w-6 h-6 text-gray-400">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/book-open.svg" class="w-6 h-6 text-gray-400">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/target.svg" class="w-6 h-6 text-gray-400">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/users.svg" class="w-6 h-6 text-indigo-600">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/user.svg" class="w-6 h-6 text-gray-400">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 动态详情页面 -->
+        <div class="w-80 h-[600px] bg-white rounded-[40px] p-6 shadow-xl overflow-hidden relative">
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 absolute inset-0 opacity-50"></div>
+            
+            <div class="relative h-full flex flex-col">
+                <!-- 返回按钮 -->
+                <div class="flex items-center mb-6">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/chevron-left.svg" class="w-6 h-6 text-gray-600 mr-3">
+                    <h1 class="text-xl font-bold text-gray-800">动态详情</h1>
+                </div>
+
+                <!-- 动态内容 -->
+                <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20 mb-4">
+                    <div class="flex items-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format" 
+                             class="w-10 h-10 rounded-full object-cover mr-3">
+                        <div>
+                            <h3 class="font-medium text-gray-800">Sarah Wilson</h3>
+                            <p class="text-xs text-gray-500">2小时前</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-3">
+                        今天完成了连续30天的晨间冥想，感觉整个人都不一样了！
+                        <br><br>
+                        最大的变化是：
+                        1. 情绪更稳定了
+                        2. 工作效率提高了
+                        3. 睡眠质量改善了
+                        <br><br>
+                        坚持真的很重要，和大家分享一下我的经验...
+                    </p>
+                    <div class="flex items-center justify-between text-sm text-gray-500">
+                        <div class="flex items-center">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/heart.svg" class="w-4 h-4 mr-1">
+                            <span>128</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/message-circle.svg" class="w-4 h-4 mr-1">
+                            <span>36</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/share.svg" class="w-4 h-4 mr-1">
+                            <span>分享</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 评论列表 -->
+                <div class="flex-1 overflow-auto">
+                    <h3 class="text-sm font-medium text-gray-700 mb-4">全部评论</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white/70 backdrop-blur-xl rounded-xl p-3 border border-white/20">
+                            <div class="flex items-start">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format" 
+                                     class="w-8 h-8 rounded-full object-cover mr-3">
+                                <div>
+                                    <div class="flex items-center mb-1">
+                                        <h4 class="text-sm font-medium text-gray-800 mr-2">Tom Chen</h4>
+                                        <span class="text-xs text-gray-500">1小时前</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">太棒了！请问你都是在什么时间冥想呢？</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 评论输入框 -->
+                <div class="pt-4">
+                    <div class="bg-white/70 backdrop-blur-xl rounded-xl p-2 flex items-center border border-white/20">
+                        <input type="text" placeholder="写下你的评论..." class="flex-1 bg-transparent text-sm outline-none px-2">
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

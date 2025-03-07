@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冥想App - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <!-- 页面预览容器 -->
+    <div class="flex space-x-6">
+        <!-- 首页 -->
+        <div class="w-80 h-[600px] bg-white rounded-[40px] p-6 shadow-xl overflow-hidden relative">
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 absolute inset-0 opacity-50"></div>
+            
+            <!-- 顶部欢迎区 -->
+            <div class="relative">
+                <div class="flex justify-between items-center mb-6">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">早安, Sarah</h1>
+                        <p class="text-gray-500 text-sm">开启平静的一天</p>
+                    </div>
+                    <img src="https://unpkg.com/lucide-static@latest/icons/bell.svg" class="w-6 h-6 text-gray-600">
+                </div>
+
+                <!-- 今日状态卡片 -->
+                <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-4 mb-6 border border-white/20 shadow-lg">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-gray-700 font-medium">今日状态</h3>
+                        <img src="https://unpkg.com/lucide-static@latest/icons/heart.svg" class="w-5 h-5 text-rose-500">
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="text-center">
+                            <p class="text-2xl font-semibold text-indigo-600">12</p>
+                            <p class="text-xs text-gray-500">连续天数</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-2xl font-semibold text-indigo-600">23</p>
+                            <p class="text-xs text-gray-500">冥想分钟</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-2xl font-semibold text-indigo-600">89</p>
+                            <p class="text-xs text-gray-500">专注指数</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 推荐课程 -->
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">为你推荐</h2>
+                <div class="space-y-4">
+                    <div class="bg-white/60 backdrop-blur-xl rounded-2xl p-3 border border-white/20">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format" 
+                             class="w-full h-32 object-cover rounded-xl mb-3">
+                        <h3 class="font-medium text-gray-800">晨间唤醒冥想</h3>
+                        <p class="text-sm text-gray-500">10分钟 · 初级</p>
+                    </div>
+                    <div class="bg-white/60 backdrop-blur-xl rounded-2xl p-3 border border-white/20">
+                        <img src="https://images.unsplash.com/photo-1474418397713-7ede21d49118?w=500&auto=format" 
+                             class="w-full h-32 object-cover rounded-xl mb-3">
+                        <h3 class="font-medium text-gray-800">专注力提升</h3>
+                        <p class="text-sm text-gray-500">15分钟 · 中级</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部导航 -->
+            <div class="absolute bottom-6 left-6 right-6">
+                <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-4 flex justify-around border border-white/20">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/home.svg" class="w-6 h-6 text-indigo-600">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/book-open.svg" class="w-6 h-6 text-gray-400">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/target.svg" class="w-6 h-6 text-gray-400">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/users.svg" class="w-6 h-6 text-gray-400">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/user.svg" class="w-6 h-6 text-gray-400">
+                </div>
+            </div>
+        </div>
+
+        <!-- 通知页面 -->
+        <div class="w-80 h-[600px] bg-white rounded-[40px] p-6 shadow-xl overflow-hidden relative">
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 absolute inset-0 opacity-50"></div>
+            
+            <div class="relative">
+                <div class="flex items-center mb-6">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/chevron-left.svg" class="w-6 h-6 text-gray-600 mr-3">
+                    <h1 class="text-xl font-bold text-gray-800">通知中心</h1>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 rounded-full p-2 mr-3">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/bell.svg" class="w-5 h-5 text-indigo-600">
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">新课程上线提醒</h3>
+                                <p class="text-sm text-gray-500 mt-1">全新课程「深度睡眠」已上线，立即体验</p>
+                                <p class="text-xs text-gray-400 mt-2">2小时前</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20">
+                        <div class="flex items-start">
+                            <div class="bg-rose-100 rounded-full p-2 mr-3">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/heart.svg" class="w-5 h-5 text-rose-600">
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">达成里程碑</h3>
+                                <p class="text-sm text-gray-500 mt-1">恭喜你完成连续冥想10天！</p>
+                                <p class="text-xs text-gray-400 mt-2">12小时前</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 rounded-full p-2 mr-3">
+                                <img src="https://unpkg.com/lucide-static@latest/icons/users.svg" class="w-5 h-5 text-green-600">
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">社区动态</h3>
+                                <p class="text-sm text-gray-500 mt-1">@李明 回复了你的动态</p>
+                                <p class="text-xs text-gray-400 mt-2">1天前</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

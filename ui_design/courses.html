@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冥想App - 课程中心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="flex space-x-6">
+        <!-- 课程列表页 -->
+        <div class="w-80 h-[600px] bg-white rounded-[40px] p-6 shadow-xl overflow-hidden relative">
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 absolute inset-0 opacity-50"></div>
+            
+            <div class="relative">
+                <!-- 顶部搜索栏 -->
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="flex-1 bg-white/70 backdrop-blur-xl rounded-xl p-2 flex items-center border border-white/20">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/search.svg" class="w-5 h-5 text-gray-400 mr-2">
+                        <input type="text" placeholder="搜索课程..." class="bg-transparent w-full outline-none text-sm">
+                    </div>
+                    <img src="https://unpkg.com/lucide-static@latest/icons/filter.svg" class="w-6 h-6 text-gray-600">
+                </div>
+
+                <!-- 课程分类 -->
+                <div class="flex space-x-3 mb-6 overflow-x-auto pb-2">
+                    <div class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm whitespace-nowrap">全部</div>
+                    <div class="bg-white/70 backdrop-blur-xl px-4 py-2 rounded-xl text-sm text-gray-600 whitespace-nowrap border border-white/20">入门课程</div>
+                    <div class="bg-white/70 backdrop-blur-xl px-4 py-2 rounded-xl text-sm text-gray-600 whitespace-nowrap border border-white/20">睡眠</div>
+                    <div class="bg-white/70 backdrop-blur-xl px-4 py-2 rounded-xl text-sm text-gray-600 whitespace-nowrap border border-white/20">专注力</div>
+                </div>
+
+                <!-- 课程列表 -->
+                <div class="space-y-4">
+                    <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20">
+                        <div class="flex">
+                            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500&auto=format" 
+                                 class="w-24 h-24 rounded-xl object-cover mr-4">
+                            <div class="flex-1">
+                                <h3 class="font-medium text-gray-800 mb-1">呼吸冥想基础</h3>
+                                <p class="text-sm text-gray-500 mb-2">通过呼吸找回内心的平静</p>
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <img src="https://unpkg.com/lucide-static@latest/icons/clock.svg" class="w-4 h-4 mr-1">
+                                    <span>10分钟</span>
+                                    <span class="mx-2">·</span>
+                                    <span>初级</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 border border-white/20">
+                        <div class="flex">
+                            <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=500&auto=format" 
+                                 class="w-24 h-24 rounded-xl object-cover mr-4">
+                            <div class="flex-1">
+                                <h3 class="font-medium text-gray-800 mb-1">深度睡眠引导</h3>
+                                <p class="text-sm text-gray-500 mb-2">改善睡眠质量的冥想课程</p>
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <img src="https://unpkg.com/lucide-static@latest/icons/clock.svg" class="w-4 h-4 mr-1">
+                                    <span>20分钟</span>
+                                    <span class="mx-2">·</span>
+                                    <span>中级</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 底部导航 -->
+                <div class="absolute bottom-0 left-0 right-0">
+                    <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-4 flex justify-around border border-white/20">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/home.svg" class="w-6 h-6 text-gray-400">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/book-open.svg" class="w-6 h-6 text-indigo-600">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/target.svg" class="w-6 h-6 text-gray-400">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/users.svg" class="w-6 h-6 text-gray-400">
+                        <img src="https://unpkg.com/lucide-static@latest/icons/user.svg" class="w-6 h-6 text-gray-400">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 课程详情页 -->
+        <div class="w-80 h-[600px] bg-white rounded-[40px] p-6 shadow-xl overflow-hidden relative">
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 absolute inset-0 opacity-50"></div>
+            
+            <div class="relative">
+                <!-- 返回按钮 -->
+                <div class="flex items-center mb-4">
+                    <img src="https://unpkg.com/lucide-static@latest/icons/chevron-left.svg" class="w-6 h-6 text-gray-600 mr-3">
+                    <h1 class="text-xl font-bold text-gray-800">课程详情</h1>
+                </div>
+
+                <!-- 课程封面 -->
+                <div class="relative mb-4">
+                    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500&auto=format" 
+                         class="w-full h-48 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <h2 class="text-xl font-bold mb-1">呼吸冥想基础</h2>
+                        <p class="text-sm opacity-90">通过呼吸找回内心的平静</p>
+                    </div>
+                </div>
+
+                <!-- 课程信息 -->
+                <div class="bg-white/70 backdrop-blur-xl rounded-2xl p-4 mb-4 border border-white/20">
+                    <div class="flex justify-between mb-3">
+                        <div class="flex items-center">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/clock.svg" class="w-5 h-5 text-gray-600 mr-2">
+                            <span class="text-sm text-gray-600">10分钟</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/bar-chart.svg" class="w-5 h-5 text-gray-600 mr-2">
+                            <span class="text-sm text-gray-600">初级</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://unpkg.com/lucide-static@latest/icons/headphones.svg" class="w-5 h-5 text-gray-600 mr-2">
+                            <span class="text-sm text-gray-600">引导式</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 课程简介 -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">课程简介</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        本课程将带领你学习基础的呼吸冥想技巧，帮助你缓解压力，提高专注力。适合冥想初学者，无需任何基础。
+                    </p>
+                </div>
+
+                <!-- 开始按钮 -->
+                <div class="absolute bottom-6 left-6 right-6">
+                    <button class="w-full bg-indigo-600 text-white py-4 rounded-xl font-medium">
+                        开始课程
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
